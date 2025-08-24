@@ -7,7 +7,7 @@ Advanced transformer-based image captioning system with **Flask web interface**.
 -  **4-layer Transformer decoder** architecture
 -  **Flask web app** with HTML/CSS frontend  
 -  **Photo upload + Live video** captioning
--  **82-85% validation accuracy** (15 epochs)
+-  **81-84% validation accuracy** (15 epochs)
 
 ##  Setup
 
