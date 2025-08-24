@@ -36,8 +36,8 @@ Open `http://localhost:5000`
 
 ##  Performance
 
-- **Training Accuracy**: 92-97%
-- **Validation Accuracy**: 88-93%  
+- **Training Accuracy**: 92-93%
+- **Validation Accuracy**: 81-84%  
 - **Model Size**: ~7M parameters
 - **Processing Time**: 1-2 seconds per image
 
