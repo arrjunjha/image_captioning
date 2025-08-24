@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🤖 AI Image Captioning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Image Captioning</h1>
+            <p>Upload images or use live video for instant AI-generated captions</p>
+        </header>
+
+        <div class="mode-selector">
+            <button id="photo-mode" class="mode-btn active">📷 Photo Upload</button>
+            <button id="video-mode" class="mode-btn">🎥 Live Video</button>
+        </div>
+
+        <!-- Photo Upload Mode -->
+        <div id="photo-section" class="section">
+            <div class="upload-area" id="upload-area">
+                <div class="upload-content">
+                    <div class="upload-icon">📸</div>
+                    <h3>Drag & Drop or Click to Upload</h3>
+                    <p>Supports JPG, PNG formats</p>
+                </div>
+                <input type="file" id="image-input" accept="image/*" hidden>
+            </div>
+            
+            <div class="preview-area" id="preview-area" style="display: none;">
+                <img id="preview-image" alt="Preview">
+                <div class="caption-result">
+                    <div class="loading" id="loading" style="display: none;">
+                        <div class="spinner"></div>
+                        <p>Generating caption...</p>
+                    </div>
+                    <div class="caption-box" id="caption-box" style="display: none;">
+                        <h3>🎯 AI Generated Caption:</h3>
+                        <p id="caption-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Video Mode -->
+        <div id="video-section" class="section" style="display: none;">
+            <div class="video-container">
+                <video id="video" autoplay muted></video>
+                <canvas id="canvas" style="display: none;"></canvas>
+                <div class="video-controls">
+                    <button id="start-camera">📹 Start Camera</button>
+                    <button id="stop-camera" style="display: none;">⏹️ Stop Camera</button>
+                </div>
+            </div>
+            
+            <div class="live-caption">
+                <h3>🔴 Live Caption:</h3>
+                <p id="live-caption-text">Click "Start Camera" to begin live captioning...</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Powered by Transformer Neural Networks 🧠</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+# Large files (GitHub has 100MB limit)
+*.h5
+*.pkl
+data/Images/
+*.zip
+*.tar.gz
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/
