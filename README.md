@@ -9,7 +9,7 @@ Advanced transformer-based image captioning system with **Flask web interface**.
 -  **Photo upload + Live video** captioning
 -  **82-85% validation accuracy** (15 epochs)
 
-## 🛠️ Setup
+##  Setup
 
 1. **Clone repository**
 git clone https://github.com/arrjunjha/image_captioning.git
